@@ -232,12 +232,12 @@
         };
 
         combo_henkan {
-            bindings = <&kp INT_HENKAN>;
+            bindings = <&JP_on>;
             key-positions = <40 41>;
         };
 
         combo_muhenkan {
-            bindings = <&kp INT_MUHENKAN>;
+            bindings = <&JP_off>;
             key-positions = <39 40>;
         };
     };
@@ -247,10 +247,10 @@
 
         DEFAULT {
             bindings = <
-&kp ESC           &mt PLUS L   &kp COMMA  &kp P      &kp DOT                            &kp F        &kp U  &lt 4 D      &lt 4 K       &sl 3
-&kp A             &kp R        &kp E      &kp N      &kp B     &none        &kp G       &kp S        &kp I  &kp T        &kp O         &kp RIGHT_BRACKET
-&mt LEFT_SHIFT Z  &mt LCTRL W  &kp UP     &kp H      &kp J     &kp TAB      &kp V       &kp C        &kp Y  &mt RCTRL M  &mt LSHIFT X  &kp BSLH
-&kp LGUI          &kp LEFT     &kp DOWN   &kp RIGHT  &kp LALT  &kp SPACE    &lt 2 BSPC  &lt 2 ENTER                                    &kp LCTRL
+&kp ESC           &mt PLUS L   &kp COMMA  &kp P      &kp DOT                            &kp DEL      &kp F  &kp U  &lt 4 D      &kp K
+&kp A             &kp R        &kp E      &kp N      &kp B     &none        &kp RBKT    &kp G        &kp S  &kp I  &kp T        &kp O
+&mt LEFT_SHIFT Z  &mt LCTRL W  &kp UP     &kp H      &kp J     &kp TAB      &kp BSLH    &kp V        &kp C  &kp Y  &mt RCTRL M  &mt RSHIFT X
+&kp LGUI          &kp LEFT     &kp DOWN   &kp RIGHT  &kp LALT  &kp SPACE    &lt 2 BSPC  &lt 2 ENTER                             &kp BSPC
             >;
 
             sensor-bindings =
@@ -269,10 +269,10 @@
 
         MOVE {
             bindings = <
-&mt LS(Q) Q  &trans     &trans     &trans     &trans                               &mt F7 N7  &mt F8 N8  &mt F9 N9  &mt F12 QMARK  &trans
-&kp TILDE    &mt F4 N4  &mt F5 N5  &mt F6 N6  &mt F11 N0    &trans     &mt F10 N0  &mt F4 N4  &mt F5 N5  &mt F6 N6  &mt F11 EXCL   &trans
-&kp LS(Z)    &mt F1 N1  &kp PG_UP  &mt F3 N3  &mt F10 EXCL  &trans     &kp DEL     &mt F1 N1  &mt F2 N2  &mt F3 N3  &kp PLUS       &trans
-&trans       &kp HOME   &kp PG_DN  &kp END    &trans        &JP_off    &trans      &JP_on                                          &trans
+&mt LS(Q) Q  &trans     &trans     &trans     &trans                             &trans      &mt F7 N7  &mt F8 N8  &mt F9 N9  &mt F12 QMARK
+&kp TILDE    &mt F4 N4  &mt F5 N5  &mt F6 N6  &mt F11 N0    &trans     &trans    &mt F10 N0  &mt F4 N4  &mt F5 N5  &mt F6 N6  &mt F11 EXCL
+&kp LS(Z)    &mt F1 N1  &kp PG_UP  &mt F3 N3  &mt F10 EXCL  &trans     &kp BSPC  &kp DEL     &mt F1 N1  &mt F2 N2  &mt F3 N3  &mt F10 PLUS
+&trans       &kp HOME   &kp PG_DN  &kp END    &trans        &JP_off    &JP_on    &JP_on                                       &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
