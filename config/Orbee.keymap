@@ -260,9 +260,9 @@
 
         JP_Arensito {
             bindings = <
-&trans  &mt PLUS MINUS  &trans  &trans  &trans                    &trans   &trans  &trans  &trans  &trans
-&trans  &trans          &trans  &trans  &trans  &trans    &trans  &trans   &trans  &trans  &trans  &trans
-&trans  &trans          &trans  &trans  &trans  &trans    &trans  &mt C K  &trans  &trans  &trans  &trans
+&trans  &mt PLUS MINUS  &trans  &trans  &trans                    &trans  &trans   &trans  &trans  &trans
+&trans  &trans          &trans  &trans  &trans  &trans    &trans  &trans  &trans   &trans  &trans  &trans
+&trans  &trans          &trans  &trans  &trans  &trans    &trans  &trans  &mt C K  &trans  &trans  &trans
 &trans  &trans          &trans  &trans  &trans  &trans    &trans  &trans                           &trans
             >;
         };
